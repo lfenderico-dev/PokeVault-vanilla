@@ -22,23 +22,39 @@ async function fetchData(event){
         const spriteImage = document.getElementById("pokemonSpriteImg");
         spriteImage.src = sprite
 
+        // Extracting pokemon type using a map (that is an array method to create a new array applying a rule, a function to each element)
+        const pokemonType = data.types.map(x => x.type.name)
+        const displayPokemonType = pokemonType.splice('')
+
         // Add the stats
         const stats = document.getElementById("pokemonStats");
         stats.innerHTML = `
         <ul>
             <li> <strong> Name: </strong> ${data.name} </li>
+            <li> <strong> Type: </strong> ${displayPokemonType} </li>
             <li> <strong> Id: </strong> ${data.id} </li>
             <li> <strong> Height: </strong> ${data.height} </li>
             <li> <strong> Weight: </strong> ${data.weight} </li>
         </ul>
         `
+
+        // Creating the function to change to shiny when sprite is clicked:
+        const changeToShiny = () => {
+        spriteImage.src = data.sprites.front_shiny;
+        }
+
+        // Add the event listener to the sprite
+        spriteImage.addEventListener(`click`, changeToShiny);
     }
     catch(error){
         alert(`An error is encountered! Please try again, maybe that is not a pokemon`)
     }
 }
 
+
+
 // Add an event listener to run the function when the button is clicked.
 const button = document.getElementById("my-button");
 button.addEventListener('click', fetchData);
+
 
