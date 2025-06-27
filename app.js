@@ -4,10 +4,8 @@ async function fetchData(event){
     // Add this to prevent page-reloading when form is submitted
     event.preventDefault();
     try{
-        // take the value of the form
-        const pokemonName = document.getElementById("typePokemonName").value;
-
         // fetch request
+        const pokemonName = document.getElementById("typePokemonName").value;
         const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
         
         // check if pokemonName is invalid
@@ -23,6 +21,17 @@ async function fetchData(event){
         const sprite = data.sprites.front_default;
         const spriteImage = document.getElementById("pokemonSpriteImg");
         spriteImage.src = sprite
+
+        // Add the stats
+        const stats = document.getElementById("pokemonStats");
+        stats.innerHTML = `
+        <ul>
+            <li> <strong> Name: </strong> ${data.name} </li>
+            <li> <strong> Id: </strong> ${data.id} </li>
+            <li> <strong> Height: </strong> ${data.height} </li>
+            <li> <strong> Weight: </strong> ${data.weight} </li>
+        </ul>
+        `
     }
     catch(error){
         alert(`An error is encountered! Please try again, maybe that is not a pokemon`)
