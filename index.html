@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>PokeVault</title>
+    <link rel="icon" type="image/png" href="/assets/icons/favicon1.png"/>
+
+    <link rel="stylesheet" href="/CSS/main.css"/>
+    <link rel="stylesheet" href="/CSS/responsive.css"/>
+</head>
+<body>
+    <header>
+        <img id="banner" src="/assets/photo/banner.png" alt="Pokemon Banner"/>
+
+        <h1 id="firstHeading">Welcome to Poke'Vault!</h1>
+    </header>
+
+    <main>
+        <form id="searchPokemon">
+            <label id="searchLabel" for="typePokemonName"><h2 id="searchLabelHeading">Search here your pokemon trainer!</h2></label><br>
+            <input id="typePokemonName" type.prevent="text" placeholder="What pokemon are you looking for trainer?" name="typePokemonName"/>
+            <button id="my-button">Search</button>
+        </form>
+
+        <div id="container">
+            <div id="pokemonSprite" class="child">
+                <img src="" alt="Pokemon Sprite" id="pokemonSpriteImg"/>
+            </div>
+
+            <div id="pokemonStats" class="child">
+            </div>
+
+            <div id="pokemonSkills" class="child">
+             POKEMON SKILLS
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+    <script src="/app.js"></script>
+</body>
+</html>

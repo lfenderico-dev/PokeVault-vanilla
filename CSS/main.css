@@ -1,0 +1,60 @@
+/* Add a custom font */
+@font-face {
+    font-family: pokemonFont;
+    src: url('/assets/Fonts/PokemonSolid.ttf') format('truetype');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: pokemonFont, sans-serif;
+    letter-spacing: 2px;
+}
+
+#banner{
+    width: 100vw;
+}
+
+#firstHeading {
+    text-align: center;
+    font-size: 60px;
+}
+
+#searchPokemon {
+    text-align: center;
+}
+
+#searchLabelHeading{
+    margin: 0;
+}
+
+#typePokemonName{
+    width: 30vw;
+    height: 5vh;
+}
+
+#container{
+    margin-top: 5vh;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.child{
+    border: solid 2px;
+    width: 50vw;
+    height: 60vh;
+}
+
+#my-button {
+    width: 5vw;
+    height: 5vh;
+}
+
+#pokemonSpriteImg{
+    width: 80%;
+    height: auto;
+}
+
+
