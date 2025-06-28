@@ -61,4 +61,11 @@
     .child{
         height: 30vh;
     }
+
+    #footerHeading{
+        font-size: 25px;
+    }
+    #footerParagraph{
+        font-size: 12px;
+    }
 }

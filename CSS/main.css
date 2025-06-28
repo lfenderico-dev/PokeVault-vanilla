@@ -102,3 +102,23 @@ strong{
     width: 20vw;
     height: 20vh;
 }
+
+#backgroundFooter{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-top: 30vh;
+}
+
+#footerHeading{
+    font-size: 45px;
+    color: tomato;
+}
+#footerParagraph{
+    font-size: 20px;
+}
+
