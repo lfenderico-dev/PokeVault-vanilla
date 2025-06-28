@@ -20,6 +20,7 @@ async function fetchData(event){
         // Add the sprite to `div id="pokemonSprite"`
         const sprite = data.sprites.front_default;
         const spriteImage = document.getElementById("pokemonSpriteImg");
+        spriteImage.style = ''  // to remove the display: none
         spriteImage.src = sprite
 
         // Extracting pokemon type using a map (that is an array method to create a new array applying a rule, a function to each element)
@@ -31,16 +32,22 @@ async function fetchData(event){
         stats.innerHTML = `
         <ul>
             <li> <strong> Name: </strong> ${data.name} </li>
+            <br/>
             <li> <strong> Type: </strong> ${displayPokemonType} </li>
+            <br/>
             <li> <strong> Id: </strong> ${data.id} </li>
+            <br/>
             <li> <strong> Height: </strong> ${data.height} </li>
+            <br/>
             <li> <strong> Weight: </strong> ${data.weight} </li>
         </ul>
         `
 
         // Creating the function to change to shiny when sprite is clicked:
         const changeToShiny = () => {
-        spriteImage.src = data.sprites.front_shiny;
+            // Must delete the previous value first because it was showing up for some seconds before showing the new one. 
+            spriteImage.src = '';
+            spriteImage.src = data.sprites.front_shiny;
         }
 
         // Add the event listener to the sprite
