@@ -1,0 +1,64 @@
+/* Phones media query */
+@media (max-width: 600px) {
+    #firstHeading{
+        font-size: 20px;
+    }
+    .firstHeadingImg{
+        width: 10vw;
+        height: auto;
+    }
+    #searchLabel{
+        font-size: 8px;
+    }
+
+    #snorlaxGif{
+        width: 10vw;
+        height: auto;
+        margin-right: 10px;
+    }
+    #snorlaxGifImg{
+        width: 8vw;
+        height: 5vh;
+    }
+
+    #pokeballGif{
+        width: 10vw;
+        height: auto;
+        margin-left: 10px;
+    }
+    #pokeballGifImg{
+        width: 10vw;
+        height: 5vh;
+    }
+
+    #typePokemonName{
+        width: 65vw;
+        height: 2vh;
+    }
+    #my-button{
+        width: 15vw;
+        height: auto;        
+    }
+    #searchPokemon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #container{
+        margin-top: 0;
+        gap: 2vw;
+    }
+    #statsList{
+        font-size: 12px;
+        height: 25vh;
+    }
+    #pokemonSpriteImg{
+        width:60vw;
+        height: 20vh;
+    }
+    .child{
+        height: 30vh;
+    }
+}

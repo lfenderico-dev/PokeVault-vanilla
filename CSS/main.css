@@ -16,6 +16,7 @@ body {
 
 #banner{
     width: 100vw;
+    height: auto;
 }
 
 #firstHeading {
@@ -80,7 +81,7 @@ strong{
     left: 0;
     width: 30vw;
     height: 30vh;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 #pokeballGifImg{
