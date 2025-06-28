@@ -13,15 +13,26 @@
     <header>
         <img id="banner" src="/assets/photo/banner.png" alt="Pokemon Banner"/>
 
-        <h1 id="firstHeading">Welcome to Poke'Vault!</h1>
+        <h1 id="firstHeading"> <img src="/assets/gif/WavePikachu.gif" alt="WavePikachu" > Welcome to Poke'Vault! <img src="/assets/gif/WavePikachu.gif" alt="WavePikachu" ></h1>
     </header>
 
     <main>
-        <form id="searchPokemon">
-            <label id="searchLabel" for="typePokemonName"><h2 id="searchLabelHeading">Search here your pokemon trainer!</h2></label><br>
-            <input id="typePokemonName" type.prevent="text" placeholder="What pokemon are you looking for trainer?" name="typePokemonName"/>
-            <button id="my-button">Search</button>
-        </form>
+        <div style="position: relative">
+            <form id="searchPokemon">
+                <label id="searchLabel" for="typePokemonName"><h2 id="searchLabelHeading">Search here your pokemon, trainer!</h2></label><br>
+                <input id="typePokemonName" type.prevent="text" placeholder="What pokemon are you looking for trainer?" name="typePokemonName"/>
+                    <button id="my-button">Search</button>
+
+                <div id="pokeballGif">
+                    <img src="/assets/gif/Pokeball.gif" alt="Pokeball" id="pokeballGifImg">
+                </div>
+
+                <div id="snorlaxGif">
+                    <img src="/assets/gif/Snorlax.gif" alt="Snorlax" id="snorlaxGifImg">
+                </div>
+            </form>
+        </div>
+
 
         <div id="container">
             <div id="pokemonSprite" class="child">
@@ -31,6 +42,10 @@
             <div id="pokemonStats" class="child">
             </div>
         </div>
+        
+
+        
+        
 
     </main>
 

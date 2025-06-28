@@ -30,16 +30,16 @@ async function fetchData(event){
         // Add the stats
         const stats = document.getElementById("pokemonStats");
         stats.innerHTML = `
-        <ul>
+        <ul id="statsList">
             <li> <strong> Name: </strong> ${data.name} </li>
             <br/>
             <li> <strong> Type: </strong> ${displayPokemonType} </li>
             <br/>
             <li> <strong> Id: </strong> ${data.id} </li>
             <br/>
-            <li> <strong> Height: </strong> ${data.height} </li>
+            <li> <strong> Height: </strong> ${data.height} m </li>
             <br/>
-            <li> <strong> Weight: </strong> ${data.weight} </li>
+            <li> <strong> Weight: </strong> ${data.weight} kg </li>
         </ul>
         `
 
