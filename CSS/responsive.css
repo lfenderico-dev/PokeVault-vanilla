@@ -1,3 +1,76 @@
+/* For tablets: */
+@media(max-width: 1024px){
+    #firstHeading{
+        font-size: 32px;
+    }
+    .firstHeadingImg{
+        width: 10vw;
+        height: auto;
+    }
+    #searchLabel{
+        font-size: 12px;
+    }
+
+    #snorlaxGif{
+        width: 15vw;
+        height: auto;
+        margin-right: 10px;
+    }
+    #snorlaxGifImg{
+        width: 8vw;
+        height: 7vh;
+    }
+
+    #pokeballGif{
+        width: 15vw;
+        height: auto;
+        margin-left: 10px;
+    }
+    #pokeballGifImg{
+        width: 10vw;
+        height: 7vh;
+    }
+
+    #typePokemonName{
+        width: 65vw;
+        height: 3vh;
+    }
+    #my-button{
+        width: 15vw;
+        height: auto;        
+    }
+    #searchPokemon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #container{
+        margin-top: 0;
+        gap: 2vw;
+    }
+    #statsList{
+        font-size: 20px;
+        height: 20vh;
+    }
+    #pokemonSpriteImg{
+        width:50vw;
+        height: 35vh;
+    }
+    .child{
+        height: 30vh;
+    }
+
+    #footerHeading{
+        font-size: 30px;
+    }
+    #footerParagraph{
+        font-size: 15px;
+    }
+}
+
+
 /* Phones media query */
 @media (max-width: 600px) {
     #firstHeading{
@@ -69,3 +142,4 @@
         font-size: 12px;
     }
 }
+
